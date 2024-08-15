@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ltz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Event Litz</h1>
+    </header>
+    <main>
+        <section id="event-list">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <img src="Works 2016.jpeg" alt="Event 1">
+                <div class="event-details">
+                    <h3>Event 1</h3>
+                    <p>Date: 2024-08-20</p>
+                    <p>Location: New York</p>
+                </div>
+            </div>
+            <div class="event">
+                <img src="download.jpeg" alt="Event 2">
+                <div class="event-details">
+                    <h3>Event 2</h3>
+                    <p>Date: 2024-09-15</p>
+                    <p>Location: Los Angeles</p>
+                </div>
+            </div>
+        </section>
+        <section id="create-event">
+            <h2>Create New Event</h2>
+            <form id="event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required>
+                
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+                
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" name="event-location" required>
+                
+                <label for="event-image">Image URL:</label>
+                <input type="url" id="event-image" name="event-image" required>
+                
+                <button type="submit">Create Event</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
